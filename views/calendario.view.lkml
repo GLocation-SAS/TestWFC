@@ -2,7 +2,7 @@
 view: calendario {
   derived_table: {
     sql: SELECT
-          cast("2023-"||malla_trafico_speed_delay_mes.mes||"-01"  AS date) fecha,
+         cast("2023-"||malla_trafico_speed_delay_mes.mes||"-01"as date)  AS fecha,
           AVG(malla_trafico_speed_delay_mes.delay ) AS malla_trafico_speed_delay_mes_average_delay
       FROM `datos_limpios.malla_trafico_speed_delay_mes`  AS malla_trafico_speed_delay_mes
       GROUP BY
