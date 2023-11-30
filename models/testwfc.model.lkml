@@ -28,3 +28,4 @@ persist_with: testwfc_default_datagroup
 
 
 explore: malla_trafico_speed_delay_mes {}
+explore: calendario {}
