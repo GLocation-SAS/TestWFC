@@ -4,7 +4,7 @@ view: tabla_malla {
     sql: SELECT
           malla_trafico_speed_delay_mes.NOMBRE_VIA  AS nombre_via,
           malla_trafico_speed_delay_mes.street  AS tramo,
-          malla_trafico_speed_delay_mes.geom  AS geom
+          cast(malla_trafico_speed_delay_mes.geom as string) AS geom
       FROM `datos_limpios.malla_trafico_speed_delay_mes`  AS malla_trafico_speed_delay_mes ;;
   }
 
@@ -31,8 +31,8 @@ view: tabla_malla {
   set: detail {
     fields: [
         nombre_via,
-	tramo,
-	geom
+  tramo,
+  geom
     ]
   }
 }
