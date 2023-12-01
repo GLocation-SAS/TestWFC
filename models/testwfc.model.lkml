@@ -33,3 +33,4 @@ explore: caso7_afectacion_flujo {}
 explore: pruebacalendario {}
 explore: caso4_huecos_lc {}
 explore: prueba_geo {}
+explore: tabla_malla {}
