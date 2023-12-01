@@ -4,7 +4,7 @@ view: tabla_malla {
     sql: SELECT
           malla_trafico_speed_delay_mes.NOMBRE_VIA  AS nombre_via,
           malla_trafico_speed_delay_mes.street  AS tramo,
-          cast(malla_trafico_speed_delay_mes.geom as string) AS geom
+          st_astext(malla_trafico_speed_delay_mes.geom) AS geom
       FROM `datos_limpios.malla_trafico_speed_delay_mes`  AS malla_trafico_speed_delay_mes ;;
   }
 
