@@ -32,9 +32,10 @@ view: caso4_huecos_lc {
     sql: ${TABLE}.date ;;
   }
 
-  dimension: geo {
-    type: string
-    sql: ${TABLE}.geo ;;
+  dimension: location {
+    type: location
+    sql_latitude: ${TABLE}.latitud ;;
+    sql_longitude: ${TABLE}.longitud ;;
   }
 
   dimension: pluscode {

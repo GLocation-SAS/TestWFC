@@ -31,3 +31,4 @@ explore: malla_trafico_speed_delay_mes {}
 explore: calendario {}
 explore: caso7_afectacion_flujo {}
 explore: pruebacalendario {}
+explore: caso4_huecos_lc {}
