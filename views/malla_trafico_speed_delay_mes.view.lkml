@@ -37,7 +37,11 @@ view: malla_trafico_speed_delay_mes {
 
   measure: average_delay {
     type: average
-    sql: round(${delay},1) ;;  }
+    sql: ${delay} ;;  }
+
+  measure: average_speed {
+    type: average
+    sql: ${speed_kmh} ;;  }
 
   dimension: end_node {
     type: string
