@@ -35,6 +35,10 @@ view: malla_trafico_speed_delay_mes {
     type: sum
     sql: ${delay} ;;  }
 
+  measure: total_speed {
+    type: list
+    sql: ${speed_kmh} ;;  }
+
   measure: average_delay {
     type: average
     sql: ${delay} ;;  }
