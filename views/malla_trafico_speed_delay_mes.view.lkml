@@ -54,7 +54,7 @@ view: malla_trafico_speed_delay_mes {
 
   dimension: geom {
     type: string
-    sql: ${TABLE}.GEOM ;;
+    sql: ST_AsText(${TABLE}.GEOM) ;;
   }
 
   dimension: id_corte {
