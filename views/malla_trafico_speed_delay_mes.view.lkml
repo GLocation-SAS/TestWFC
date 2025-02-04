@@ -60,7 +60,7 @@ view: malla_trafico_speed_delay_mes {
     type: string
     sql: ST_AsText(${TABLE}.GEOM) ;;
   }
-  dimension: geos {
+  dimension: geos_{
     type: string
     sql: ${TABLE}.GEO_string ;;
   }
