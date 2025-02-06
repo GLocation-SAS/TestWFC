@@ -34,3 +34,4 @@ explore: pruebacalendario {}
 explore: caso4_huecos_lc {}
 explore: prueba_geo {}
 explore: tabla_malla {}
+explore: alertas_upl {}
